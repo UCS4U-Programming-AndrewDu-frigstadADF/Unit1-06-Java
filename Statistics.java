@@ -20,22 +20,29 @@ class Statistics {
         File file3 = new File(
                 "C:\\Users\\s278552\\Everything\\Unit1-06.txt\\Unit1-06-Java\\set3.txt");
 
+        // Creating an object of BufferedReader class
+        BufferedReader br = new BufferedReader(new FileReader(file1));
+        BufferedReader br = new BufferedReader(new FileReader(file2));
+        BufferedReader br = new BufferedReader(new FileReader(file3));
+
+        // declaring string variable
+        String st;
+
+        while ((st = br.readLine()) != null)
+ 
+            // Print the string
+            System.out.println(st);
         // try catch for the list
+        
         try {
             // converting array to an array of integers
             arrayInt = Integer.parseInt(array);
         } catch (NumberFormatException e) {
             arrayInt = -1;
         }
-
-        // printing numbers of the text file
-        while (arrayCount = !arrayNum) {
-
             // printing error message
             if (arrayInt == -1) {
                 System.out.println("There is a string in the text file, remove it");
-            } else {
-                System.out.println("");
             }
         }
     }

@@ -110,7 +110,7 @@ class Statistics {
         }
 
         // reading the text file
-        File file = new File("C:\\Users\\andye\\Downloads\\set" + txtFileSelect + ".txt");
+        File file = new File("C:\\Users\\s278552\\Downloads\\set" + txtFileSelect + ".txt");
 
         // printing out all the numbers in the text file
         System.out.println(file);
@@ -159,6 +159,6 @@ class Statistics {
         System.out.println("Your median is " + median);
 
         List<Integer> mode = calcMode(num);
-        System.out.println("Your median is " + mode);
+        System.out.println("Your mode is " + mode);
     }
 }
